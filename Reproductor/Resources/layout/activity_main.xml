@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView 
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout1"
+    android:theme="@android:style/Theme.Material.Light.NoActionBar"
+    android:orientation="vertical">
+    <TextView
+        android:text="Bienvenido a FluentMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginBottom="20.7dp"
+        tools:ignore="HardcodedText"
+        android:textStyle="bold|normal"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:typeface="sans"
+        android:layout_marginTop="17.4dp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:text="Seleccione un servicio para conectar con su biblioteca en la nube o continúe sin conexión"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/app_text"
-    />
-</RelativeLayout>
+        android:id="@+id/text1"
+        android:layout_marginTop="34.9dp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:textSize="18dp" />
+
+
+    <ImageButton
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:id="@+id/AppleMusic"
+        android:scaleType="centerInside"
+        android:src="@drawable/applemusic"
+        android:contentDescription="Conectar con Apple Music"
+        tools:ignore="HardcodedText"
+        android:overScrollMode="ifContentScrolls"
+        android:background="@drawable/borde_redondo"
+        android:layout_marginTop="33.8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="2.2dp" />
+
+    
+    
+    <ImageButton
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:id="@+id/Spotify"
+        android:scaleType="centerInside"
+        android:src="@drawable/spotify"
+        android:background="@drawable/borde_redondo"
+        android:layout_marginTop="28.0dp"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="Conectar con Spotify"
+        tools:ignore="HardcodedText"
+        android:overScrollMode="ifContentScrolls"
+     />
+
+    
+    
+    <Button
+        android:text="Continuar sin conexión"
+        android:layout_width="250.9dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:background="@drawable/borde_redondo"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="88.4dp"
+        android:layout_marginLeft="74.5dp"
+        android:layout_below="@id/text1"
+        android:layout_marginRight="88.7dp" />
+
+</LinearLayout>
